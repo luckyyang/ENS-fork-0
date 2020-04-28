@@ -1,0 +1,100 @@
+Replacing 'ENSRegistry'
+-----------------------
+> transaction hash:    0xd0855d4530b2f8ba8e9de05ecb979d15390aeaf57b39e022d9827211cd575f19
+> Blocks: 1            Seconds: 9
+> contract address:    0x68791737beb542C6e7b02c870D34e65017233EC7
+> block number:        1446016
+> block timestamp:     1588075786
+> account:             0x0B72867FE6274597A038bE5684c8649ab7355c40
+> balance:             0.73110546
+> gas used:            1316266 (0x1415aa)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.02632532 ETH
+
+
+Replacing 'HashRegistrar'
+-------------------------
+> transaction hash:    0x8efa50a76246c72501b04c16a8cd09e40d23899010b55b4068d7d633cc6cf66d
+> Blocks: 1            Seconds: 9
+> contract address:    0x574CB87E0806A2E7C25eB7fb328B17EA27A628d7
+> block number:        1446017
+> block timestamp:     1588075801
+> account:             0x0B72867FE6274597A038bE5684c8649ab7355c40
+> balance:             0.63453582
+> gas used:            4828482 (0x49ad42)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.09656964 ETH
+
+
+Replacing 'BaseRegistrarImplementation'
+---------------------------------------
+> transaction hash:    0x0d97325178159c0d689300d9cae0d7939c831e6e5222b525b850fdbc36ea0048
+> Blocks: 0            Seconds: 8
+> contract address:    0xefa2ee8aB8881c62390ed1F201301a8c9b1a5C03
+> block number:        1446018
+> block timestamp:     1588075816
+> account:             0x0B72867FE6274597A038bE5684c8649ab7355c40
+> balance:             0.56113182
+> gas used:            3670200 (0x3800b8)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.073404 ETH
+
+
+Deploying 'SimplePriceOracle'
+-----------------------------
+> transaction hash:    0x3dcb6a30b10639e34975e971877c62fe9f427873133d56400117810dd170f5c2
+> Blocks: 1            Seconds: 8
+> contract address:    0xc2B6980c987B50BDAf8213d0BB5E4Fe68E43B1E5
+> block number:        1446019
+> block timestamp:     1588075831
+> account:             0x0B72867FE6274597A038bE5684c8649ab7355c40
+> balance:             0.650987
+> gas used:            507241 (0x7bd69)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.01014482 ETH
+
+
+Deploying 'ETHRegistrarController'
+----------------------------------
+> transaction hash:    0x48f4ab5720f328b65cb77a5624959e5c7330af87e7acea9f3633b4285d3cb2da
+> Blocks: 1            Seconds: 8
+> contract address:    0x023d00BAf01336E82953F276Df81dbFE3640F23d
+> block number:        1446020
+> block timestamp:     1588075846
+> account:             0x0B72867FE6274597A038bE5684c8649ab7355c40
+> balance:             0.6103931
+> gas used:            2029695 (0x1ef87f)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.0405939 ETH
+
+
+Deploying 'OwnedResolver'
+-------------------------
+> transaction hash:    0x8e9b3fd7e1b8d7b5f8cf0b556806f7786f8e7306af7b2901fdea42ff2888d6e4
+> Blocks: 1            Seconds: 8
+> contract address:    0x1B5230bD0920eA83eb8c2d110a026e50db2bd7ed
+> block number:        1446021
+> block timestamp:     1588075861
+> account:             0x0B72867FE6274597A038bE5684c8649ab7355c40
+> balance:             0.55634422
+> gas used:            2702444 (0x293c6c)
+> gas price:           20 gwei
+> value sent:          0 ETH
+> total cost:          0.05404888 ETH
+
+
+> Saving migration to chain.
+> Saving artifacts
+-------------------------------------
+> Total cost:          0.30108656 ETH
+
+
+Summary
+=======
+> Total deployments:   7
+> Final cost:          0.30506718 ETH
