@@ -25,7 +25,7 @@ module.exports = async function(deployer, network, accounts) {
   const ens = await ENSRegistry.deployed();
 
   // Deploy the Hashregistry
-  await deployer.deploy(HashRegistrar, ENSRegistry.address, ELA_NODE, 1493895600);
+  await deployer.deploy(HashRegistrar, ens.address, ELA_NODE, 1493895600);
   const hashRegistrar = await HashRegistrar.deployed();
 
   // Create the original 'permanent' registrar and register some names on it

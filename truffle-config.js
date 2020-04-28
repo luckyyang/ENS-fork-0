@@ -26,8 +26,6 @@
 
 const privateKey = require('./pk')
 
-console.log(privateKey)
-
 const PrivateKeyProvider = require("truffle-privatekey-provider");
 
 module.exports = {
