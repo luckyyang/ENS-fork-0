@@ -5,7 +5,6 @@
       "constant": true,
       "inputs": [
         {
-          "internalType": "bytes4",
           "name": "interfaceId",
           "type": "bytes4"
         }
@@ -13,7 +12,6 @@
       "name": "supportsInterface",
       "outputs": [
         {
-          "internalType": "bool",
           "name": "",
           "type": "bool"
         }
@@ -23,7 +21,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"https://github.com/ethereum/EIPs/blob/master/EIPS/eip-165.md\",\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"Interface identification is specified in ERC-165. This function uses less than 30,000 gas.\",\"params\":{\"interfaceId\":\"The interface identifier, as specified in ERC-165\"}}},\"title\":\"IERC165\"},\"userdoc\":{\"methods\":{\"supportsInterface(bytes4)\":{\"notice\":\"Query if a contract implements an interface\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/kevin/Dropbox/works/dev/ENS-fork/contracts/ETHRegistrarController.sol\":\"IERC165\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/kevin/Dropbox/works/dev/ENS-fork/contracts/ETHRegistrarController.sol\":{\"keccak256\":\"0x004ab2984f23b34f1a048cb37a2164b62b125787b6aaede61a0be3c0d29658d6\",\"urls\":[\"bzz-raw://1daf3f69ede5b036e581927ce974c12d25b527910deec4af320ce167e570085d\",\"dweb:/ipfs/QmYmAafCNVFPeBvkUnWRrmRXJ5jUAmx7jGUVmGVN6RhA7T\"]}},\"version\":1}",
+  "metadata": "",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -3247,7 +3245,7 @@
                                       "name": "this",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 11310,
+                                      "referencedDeclaration": 11309,
                                       "src": "3957:4:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_contract$_DeedImplementation_$4535",
@@ -3738,7 +3736,7 @@
                                           "name": "this",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 11310,
+                                          "referencedDeclaration": 11309,
                                           "src": "4321:4:2",
                                           "typeDescriptions": {
                                             "typeIdentifier": "t_contract$_DeedImplementation_$4535",
@@ -4571,7 +4569,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11310,
+                              "referencedDeclaration": 11309,
                               "src": "5247:4:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_DeedImplementation_$4535",
@@ -7990,7 +7988,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11314,
+                                "referencedDeclaration": 11313,
                                 "src": "8479:4:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -14680,7 +14678,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11314,
+                                "referencedDeclaration": 11313,
                                 "src": "15908:4:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -17628,7 +17626,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11314,
+                              "referencedDeclaration": 11313,
                               "src": "18571:4:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -20774,7 +20772,7 @@
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11314,
+                          "referencedDeclaration": 11313,
                           "src": "22077:4:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -20870,7 +20868,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 11314,
+                                  "referencedDeclaration": 11313,
                                   "src": "22143:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -23012,8 +23010,8 @@
                         "referencedDeclaration": null,
                         "src": "23186:30:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_creation_payable$_t_address_payable_$returns$_t_contract$_DeedImplementation_$4535_$value_$",
-                          "typeString": "function (uint256) pure returns (function (address payable) payable returns (contract DeedImplementation))"
+                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_creation_payable$_t_address_payable_$returns$_t_contract$_DeedImplementation_$4535_$value_$",
+                          "typeString": "function (uint256) returns (function (address payable) payable returns (contract DeedImplementation))"
                         }
                       },
                       "id": 5924,
@@ -23409,7 +23407,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11314,
+                            "referencedDeclaration": 11313,
                             "src": "23538:4:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -24348,7 +24346,7 @@
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11314,
+                          "referencedDeclaration": 11313,
                           "src": "24185:4:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -25098,20 +25096,20 @@
                       }
                     },
                     {
-                      "s": {
-                        "declaration": 6076,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "25396:1:2",
-                        "valueSize": 1
-                      }
-                    },
-                    {
                       "end": {
                         "declaration": 6087,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "25414:3:2",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "s": {
+                        "declaration": 6076,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "25396:1:2",
                         "valueSize": 1
                       }
                     },
@@ -25137,7 +25135,7 @@
                   "id": 6089,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    ptr := add(s, 1)\n    end := add(mload(s), ptr)\n}",
-                  "src": "25362:87:2"
+                  "src": "25362:100:2"
                 },
                 {
                   "assignments": [
@@ -25259,8 +25257,8 @@
                         ],
                         "id": 6105,
                         "nodeType": "InlineAssembly",
-                        "operations": "{ b := and(mload(ptr), 0xFF) }",
-                        "src": "25543:39:2"
+                        "operations": "{\n    b := and(mload(ptr), 0xFF)\n}",
+                        "src": "25543:54:2"
                       },
                       {
                         "condition": {
@@ -29309,8 +29307,8 @@
                   ],
                   "id": 6425,
                   "nodeType": "InlineAssembly",
-                  "operations": "{ size := extcodesize(account) }",
-                  "src": "32034:41:2"
+                  "operations": "{\n    size := extcodesize(account)\n}",
+                  "src": "32034:56:2"
                 },
                 {
                   "expression": {
@@ -47679,7 +47677,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11336,
+                              "referencedDeclaration": 11335,
                               "src": "53998:4:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_ETHRegistrarController_$7840",
@@ -51277,7 +51275,7 @@
                                       "name": "this",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 11310,
+                                      "referencedDeclaration": 11309,
                                       "src": "3957:4:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_contract$_DeedImplementation_$4535",
@@ -51768,7 +51766,7 @@
                                           "name": "this",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 11310,
+                                          "referencedDeclaration": 11309,
                                           "src": "4321:4:2",
                                           "typeDescriptions": {
                                             "typeIdentifier": "t_contract$_DeedImplementation_$4535",
@@ -52601,7 +52599,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11310,
+                              "referencedDeclaration": 11309,
                               "src": "5247:4:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_DeedImplementation_$4535",
@@ -56020,7 +56018,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11314,
+                                "referencedDeclaration": 11313,
                                 "src": "8479:4:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -62710,7 +62708,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11314,
+                                "referencedDeclaration": 11313,
                                 "src": "15908:4:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -65658,7 +65656,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11314,
+                              "referencedDeclaration": 11313,
                               "src": "18571:4:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -68804,7 +68802,7 @@
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11314,
+                          "referencedDeclaration": 11313,
                           "src": "22077:4:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -68900,7 +68898,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 11314,
+                                  "referencedDeclaration": 11313,
                                   "src": "22143:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -71042,8 +71040,8 @@
                         "referencedDeclaration": null,
                         "src": "23186:30:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_creation_payable$_t_address_payable_$returns$_t_contract$_DeedImplementation_$4535_$value_$",
-                          "typeString": "function (uint256) pure returns (function (address payable) payable returns (contract DeedImplementation))"
+                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_creation_payable$_t_address_payable_$returns$_t_contract$_DeedImplementation_$4535_$value_$",
+                          "typeString": "function (uint256) returns (function (address payable) payable returns (contract DeedImplementation))"
                         }
                       },
                       "id": 5924,
@@ -71439,7 +71437,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11314,
+                            "referencedDeclaration": 11313,
                             "src": "23538:4:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -72378,7 +72376,7 @@
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11314,
+                          "referencedDeclaration": 11313,
                           "src": "24185:4:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_HashRegistrar_$6162",
@@ -73128,20 +73126,20 @@
                       }
                     },
                     {
-                      "s": {
-                        "declaration": 6076,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "25396:1:2",
-                        "valueSize": 1
-                      }
-                    },
-                    {
                       "end": {
                         "declaration": 6087,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "25414:3:2",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "s": {
+                        "declaration": 6076,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "25396:1:2",
                         "valueSize": 1
                       }
                     },
@@ -73167,7 +73165,7 @@
                   "id": 6089,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    ptr := add(s, 1)\n    end := add(mload(s), ptr)\n}",
-                  "src": "25362:87:2"
+                  "src": "25362:100:2"
                 },
                 {
                   "assignments": [
@@ -73289,8 +73287,8 @@
                         ],
                         "id": 6105,
                         "nodeType": "InlineAssembly",
-                        "operations": "{ b := and(mload(ptr), 0xFF) }",
-                        "src": "25543:39:2"
+                        "operations": "{\n    b := and(mload(ptr), 0xFF)\n}",
+                        "src": "25543:54:2"
                       },
                       {
                         "condition": {
@@ -77339,8 +77337,8 @@
                   ],
                   "id": 6425,
                   "nodeType": "InlineAssembly",
-                  "operations": "{ size := extcodesize(account) }",
-                  "src": "32034:41:2"
+                  "operations": "{\n    size := extcodesize(account)\n}",
+                  "src": "32034:56:2"
                 },
                 {
                   "expression": {
@@ -95709,7 +95707,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11336,
+                              "referencedDeclaration": 11335,
                               "src": "53998:4:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_ETHRegistrarController_$7840",
@@ -96092,11 +96090,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T08:49:03.566Z",
+  "updatedAt": "2020-04-28T10:55:58.973Z",
   "devdoc": {
     "details": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-165.md",
     "methods": {

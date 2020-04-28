@@ -6,13 +6,11 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "bytes32",
           "name": "hash",
           "type": "bytes32"
         },
         {
           "indexed": false,
-          "internalType": "uint256",
           "name": "registrationDate",
           "type": "uint256"
         }
@@ -25,25 +23,43 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "bytes32",
           "name": "hash",
           "type": "bytes32"
         },
         {
           "indexed": true,
-          "internalType": "address",
+          "name": "bidder",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "deposit",
+          "type": "uint256"
+        }
+      ],
+      "name": "NewBid",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "hash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
           "name": "owner",
           "type": "address"
         },
         {
           "indexed": false,
-          "internalType": "uint256",
           "name": "value",
           "type": "uint256"
         },
         {
           "indexed": false,
-          "internalType": "uint8",
           "name": "status",
           "type": "uint8"
         }
@@ -56,56 +72,21 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "bytes32",
           "name": "hash",
           "type": "bytes32"
         },
         {
           "indexed": true,
-          "internalType": "string",
-          "name": "name",
-          "type": "string"
-        },
-        {
-          "indexed": false,
-          "internalType": "uint256",
-          "name": "value",
-          "type": "uint256"
-        },
-        {
-          "indexed": false,
-          "internalType": "uint256",
-          "name": "registrationDate",
-          "type": "uint256"
-        }
-      ],
-      "name": "HashInvalidated",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "internalType": "bytes32",
-          "name": "hash",
-          "type": "bytes32"
-        },
-        {
-          "indexed": true,
-          "internalType": "address",
           "name": "owner",
           "type": "address"
         },
         {
           "indexed": false,
-          "internalType": "uint256",
           "name": "value",
           "type": "uint256"
         },
         {
           "indexed": false,
-          "internalType": "uint256",
           "name": "registrationDate",
           "type": "uint256"
         }
@@ -118,13 +99,11 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "bytes32",
           "name": "hash",
           "type": "bytes32"
         },
         {
           "indexed": false,
-          "internalType": "uint256",
           "name": "value",
           "type": "uint256"
         }
@@ -137,31 +116,32 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "bytes32",
           "name": "hash",
           "type": "bytes32"
         },
         {
           "indexed": true,
-          "internalType": "address",
-          "name": "bidder",
-          "type": "address"
+          "name": "name",
+          "type": "string"
         },
         {
           "indexed": false,
-          "internalType": "uint256",
-          "name": "deposit",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "registrationDate",
           "type": "uint256"
         }
       ],
-      "name": "NewBid",
+      "name": "HashInvalidated",
       "type": "event"
     },
     {
       "constant": true,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "_hash",
           "type": "bytes32"
         }
@@ -169,7 +149,6 @@
       "name": "state",
       "outputs": [
         {
-          "internalType": "enum Registrar.Mode",
           "name": "",
           "type": "uint8"
         }
@@ -182,7 +161,6 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "_hash",
           "type": "bytes32"
         }
@@ -197,7 +175,6 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32[]",
           "name": "_hashes",
           "type": "bytes32[]"
         }
@@ -212,7 +189,6 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "sealedBid",
           "type": "bytes32"
         }
@@ -227,12 +203,10 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32[]",
           "name": "hashes",
           "type": "bytes32[]"
         },
         {
-          "internalType": "bytes32",
           "name": "sealedBid",
           "type": "bytes32"
         }
@@ -247,17 +221,14 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "_hash",
           "type": "bytes32"
         },
         {
-          "internalType": "uint256",
           "name": "_value",
           "type": "uint256"
         },
         {
-          "internalType": "bytes32",
           "name": "_salt",
           "type": "bytes32"
         }
@@ -272,12 +243,10 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "address",
           "name": "bidder",
           "type": "address"
         },
         {
-          "internalType": "bytes32",
           "name": "seal",
           "type": "bytes32"
         }
@@ -292,7 +261,6 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "_hash",
           "type": "bytes32"
         }
@@ -307,12 +275,10 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "_hash",
           "type": "bytes32"
         },
         {
-          "internalType": "address payable",
           "name": "newOwner",
           "type": "address"
         }
@@ -327,7 +293,6 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "_hash",
           "type": "bytes32"
         }
@@ -342,7 +307,6 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "string",
           "name": "unhashedName",
           "type": "string"
         }
@@ -357,7 +321,6 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32[]",
           "name": "labels",
           "type": "bytes32[]"
         }
@@ -372,7 +335,6 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "_hash",
           "type": "bytes32"
         }
@@ -387,17 +349,14 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "hash",
           "type": "bytes32"
         },
         {
-          "internalType": "contract Deed",
           "name": "deed",
           "type": "address"
         },
         {
-          "internalType": "uint256",
           "name": "registrationDate",
           "type": "uint256"
         }
@@ -412,7 +371,6 @@
       "constant": true,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "_hash",
           "type": "bytes32"
         }
@@ -420,27 +378,22 @@
       "name": "entries",
       "outputs": [
         {
-          "internalType": "enum Registrar.Mode",
           "name": "",
           "type": "uint8"
         },
         {
-          "internalType": "address",
           "name": "",
           "type": "address"
         },
         {
-          "internalType": "uint256",
           "name": "",
           "type": "uint256"
         },
         {
-          "internalType": "uint256",
           "name": "",
           "type": "uint256"
         },
         {
-          "internalType": "uint256",
           "name": "",
           "type": "uint256"
         }
@@ -450,7 +403,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"registrationDate\",\"type\":\"uint256\"}],\"name\":\"AuctionStarted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"status\",\"type\":\"uint8\"}],\"name\":\"BidRevealed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"registrationDate\",\"type\":\"uint256\"}],\"name\":\"HashInvalidated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"registrationDate\",\"type\":\"uint256\"}],\"name\":\"HashRegistered\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"HashReleased\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"bidder\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"deposit\",\"type\":\"uint256\"}],\"name\":\"NewBid\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"hash\",\"type\":\"bytes32\"},{\"internalType\":\"contract Deed\",\"name\":\"deed\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"registrationDate\",\"type\":\"uint256\"}],\"name\":\"acceptRegistrarTransfer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"bidder\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"seal\",\"type\":\"bytes32\"}],\"name\":\"cancelBid\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"}],\"name\":\"entries\",\"outputs\":[{\"internalType\":\"enum Registrar.Mode\",\"name\":\"\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"labels\",\"type\":\"bytes32[]\"}],\"name\":\"eraseNode\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"}],\"name\":\"finalizeAuction\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"unhashedName\",\"type\":\"string\"}],\"name\":\"invalidateName\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"sealedBid\",\"type\":\"bytes32\"}],\"name\":\"newBid\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"}],\"name\":\"releaseDeed\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"}],\"name\":\"startAuction\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"_hashes\",\"type\":\"bytes32[]\"}],\"name\":\"startAuctions\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"hashes\",\"type\":\"bytes32[]\"},{\"internalType\":\"bytes32\",\"name\":\"sealedBid\",\"type\":\"bytes32\"}],\"name\":\"startAuctionsAndBid\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"}],\"name\":\"state\",\"outputs\":[{\"internalType\":\"enum Registrar.Mode\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"},{\"internalType\":\"address payable\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transfer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"}],\"name\":\"transferRegistrars\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"_salt\",\"type\":\"bytes32\"}],\"name\":\"unsealBid\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/kevin/Dropbox/works/dev/ENS-fork/contracts/HashRegistrar.sol\":\"Registrar\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/kevin/Dropbox/works/dev/ENS-fork/contracts/HashRegistrar.sol\":{\"keccak256\":\"0xbcc96e2d663fbe81d4170a4341a2782ee74a68cab9a892c189b83c7e4541dac7\",\"urls\":[\"bzz-raw://1b24cda52bc8c127557d7fefc2cc9dba6fc4998a5e85fc0115da8748ca264d17\",\"dweb:/ipfs/QmaU9jtJKyqX7zhJdbVihovPuCDXoRQ25DvptQMZvs3N5P\"]}},\"version\":1}",
+  "metadata": "",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -4178,7 +4131,7 @@
                                       "name": "this",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 11342,
+                                      "referencedDeclaration": 11341,
                                       "src": "4161:4:3",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_contract$_DeedImplementation_$8275",
@@ -4669,7 +4622,7 @@
                                           "name": "this",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 11342,
+                                          "referencedDeclaration": 11341,
                                           "src": "4525:4:3",
                                           "typeDescriptions": {
                                             "typeIdentifier": "t_contract$_DeedImplementation_$8275",
@@ -5502,7 +5455,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11342,
+                              "referencedDeclaration": 11341,
                               "src": "5451:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_DeedImplementation_$8275",
@@ -8993,7 +8946,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11346,
+                                "referencedDeclaration": 11345,
                                 "src": "8254:4:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -15683,7 +15636,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11346,
+                                "referencedDeclaration": 11345,
                                 "src": "15683:4:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -18631,7 +18584,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11346,
+                              "referencedDeclaration": 11345,
                               "src": "18346:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -21777,7 +21730,7 @@
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11346,
+                          "referencedDeclaration": 11345,
                           "src": "21852:4:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -21873,7 +21826,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 11346,
+                                  "referencedDeclaration": 11345,
                                   "src": "21918:4:3",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -24015,8 +23968,8 @@
                         "referencedDeclaration": null,
                         "src": "22961:30:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_creation_payable$_t_address_payable_$returns$_t_contract$_DeedImplementation_$8275_$value_$",
-                          "typeString": "function (uint256) pure returns (function (address payable) payable returns (contract DeedImplementation))"
+                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_creation_payable$_t_address_payable_$returns$_t_contract$_DeedImplementation_$8275_$value_$",
+                          "typeString": "function (uint256) returns (function (address payable) payable returns (contract DeedImplementation))"
                         }
                       },
                       "id": 9670,
@@ -24412,7 +24365,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11346,
+                            "referencedDeclaration": 11345,
                             "src": "23313:4:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -25351,7 +25304,7 @@
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11346,
+                          "referencedDeclaration": 11345,
                           "src": "23960:4:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -26101,20 +26054,20 @@
                       }
                     },
                     {
-                      "s": {
-                        "declaration": 9822,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "25171:1:3",
-                        "valueSize": 1
-                      }
-                    },
-                    {
                       "end": {
                         "declaration": 9833,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "25189:3:3",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "s": {
+                        "declaration": 9822,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "25171:1:3",
                         "valueSize": 1
                       }
                     },
@@ -26140,7 +26093,7 @@
                   "id": 9835,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    ptr := add(s, 1)\n    end := add(mload(s), ptr)\n}",
-                  "src": "25137:87:3"
+                  "src": "25137:100:3"
                 },
                 {
                   "assignments": [
@@ -26262,8 +26215,8 @@
                         ],
                         "id": 9851,
                         "nodeType": "InlineAssembly",
-                        "operations": "{ b := and(mload(ptr), 0xFF) }",
-                        "src": "25318:39:3"
+                        "operations": "{\n    b := and(mload(ptr), 0xFF)\n}",
+                        "src": "25318:54:3"
                       },
                       {
                         "condition": {
@@ -30819,7 +30772,7 @@
                                       "name": "this",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 11342,
+                                      "referencedDeclaration": 11341,
                                       "src": "4161:4:3",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_contract$_DeedImplementation_$8275",
@@ -31310,7 +31263,7 @@
                                           "name": "this",
                                           "nodeType": "Identifier",
                                           "overloadedDeclarations": [],
-                                          "referencedDeclaration": 11342,
+                                          "referencedDeclaration": 11341,
                                           "src": "4525:4:3",
                                           "typeDescriptions": {
                                             "typeIdentifier": "t_contract$_DeedImplementation_$8275",
@@ -32143,7 +32096,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11342,
+                              "referencedDeclaration": 11341,
                               "src": "5451:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_DeedImplementation_$8275",
@@ -35634,7 +35587,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11346,
+                                "referencedDeclaration": 11345,
                                 "src": "8254:4:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -42324,7 +42277,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 11346,
+                                "referencedDeclaration": 11345,
                                 "src": "15683:4:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -45272,7 +45225,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 11346,
+                              "referencedDeclaration": 11345,
                               "src": "18346:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -48418,7 +48371,7 @@
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11346,
+                          "referencedDeclaration": 11345,
                           "src": "21852:4:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -48514,7 +48467,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 11346,
+                                  "referencedDeclaration": 11345,
                                   "src": "21918:4:3",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -50656,8 +50609,8 @@
                         "referencedDeclaration": null,
                         "src": "22961:30:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_creation_payable$_t_address_payable_$returns$_t_contract$_DeedImplementation_$8275_$value_$",
-                          "typeString": "function (uint256) pure returns (function (address payable) payable returns (contract DeedImplementation))"
+                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_creation_payable$_t_address_payable_$returns$_t_contract$_DeedImplementation_$8275_$value_$",
+                          "typeString": "function (uint256) returns (function (address payable) payable returns (contract DeedImplementation))"
                         }
                       },
                       "id": 9670,
@@ -51053,7 +51006,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11346,
+                            "referencedDeclaration": 11345,
                             "src": "23313:4:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -51992,7 +51945,7 @@
                           "name": "this",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11346,
+                          "referencedDeclaration": 11345,
                           "src": "23960:4:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_contract$_HashRegistrar_$9908",
@@ -52742,20 +52695,20 @@
                       }
                     },
                     {
-                      "s": {
-                        "declaration": 9822,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "25171:1:3",
-                        "valueSize": 1
-                      }
-                    },
-                    {
                       "end": {
                         "declaration": 9833,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "25189:3:3",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "s": {
+                        "declaration": 9822,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "25171:1:3",
                         "valueSize": 1
                       }
                     },
@@ -52781,7 +52734,7 @@
                   "id": 9835,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    ptr := add(s, 1)\n    end := add(mload(s), ptr)\n}",
-                  "src": "25137:87:3"
+                  "src": "25137:100:3"
                 },
                 {
                   "assignments": [
@@ -52903,8 +52856,8 @@
                         ],
                         "id": 9851,
                         "nodeType": "InlineAssembly",
-                        "operations": "{ b := and(mload(ptr), 0xFF) }",
-                        "src": "25318:39:3"
+                        "operations": "{\n    b := and(mload(ptr), 0xFF)\n}",
+                        "src": "25318:54:3"
                       },
                       {
                         "condition": {
@@ -53741,11 +53694,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T08:49:03.662Z",
+  "updatedAt": "2020-04-28T10:55:59.099Z",
   "devdoc": {
     "methods": {}
   },

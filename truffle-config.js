@@ -23,6 +23,10 @@
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+const PrivateKeyProvider = require("truffle-privatekey-provider");
+//just a test key, copy it if u want
+const privateKey = "274a3479ae7a44b390aa30541ae2f72b16b7c641a91a7e1121bd7936286dcf1b";
+
 
 module.exports = {
   /**
@@ -42,11 +46,19 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
-    development: {
+    dev: {
       host: "127.0.0.1", // Localhost (default: none)
       port: 7545, // Standard Ethereum port (default: none)
       network_id: "*", // Any network (default: none)
     },
+    ela: {
+      provider: function() {
+        return new PrivateKeyProvider(privateKey,"https://rpc.elaeth.io")
+      },
+      port:8545,
+      network_id: "*",
+      gas: 8000000,
+    }
 
     // Another network with more advanced options...
     // advanced: {

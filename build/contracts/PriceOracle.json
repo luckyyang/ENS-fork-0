@@ -5,17 +5,14 @@
       "constant": true,
       "inputs": [
         {
-          "internalType": "string",
           "name": "name",
           "type": "string"
         },
         {
-          "internalType": "uint256",
           "name": "expires",
           "type": "uint256"
         },
         {
-          "internalType": "uint256",
           "name": "duration",
           "type": "uint256"
         }
@@ -23,7 +20,6 @@
       "name": "price",
       "outputs": [
         {
-          "internalType": "uint256",
           "name": "",
           "type": "uint256"
         }
@@ -33,7 +29,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"expires\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"duration\",\"type\":\"uint256\"}],\"name\":\"price\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"price(string,uint256,uint256)\":{\"details\":\"Returns the price to register or renew a name.\",\"params\":{\"duration\":\"How long the name is being registered or extended for, in seconds.\",\"expires\":\"When the name presently expires (0 if this is a new registration).\",\"name\":\"The name being registered or renewed.\"},\"return\":\"The price of this renewal or registration, in wei.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/kevin/Dropbox/works/dev/ENS-fork/contracts/SimplePriceOracle.sol\":\"PriceOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/kevin/Dropbox/works/dev/ENS-fork/contracts/SimplePriceOracle.sol\":{\"keccak256\":\"0x8eed745f0cb3c177beb8e08bafa7480e6b1f2dba50cb40f298da2d160d193ba9\",\"urls\":[\"bzz-raw://33be39ad034f3735ca14f4c967a2fc381042289bcd798fda09a219e8c762fae3\",\"dweb:/ipfs/QmXP7xRYK95Nj1DJWoUZQ6dbupgeHyVnb8WS13iBh8vLvM\"]}},\"version\":1}",
+  "metadata": "",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -7650,11 +7646,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T08:49:03.720Z",
+  "updatedAt": "2020-04-28T10:55:59.158Z",
   "devdoc": {
     "methods": {
       "price(string,uint256,uint256)": {

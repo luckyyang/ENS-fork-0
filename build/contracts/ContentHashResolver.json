@@ -6,13 +6,11 @@
       "inputs": [
         {
           "indexed": true,
-          "internalType": "bytes32",
           "name": "node",
           "type": "bytes32"
         },
         {
           "indexed": false,
-          "internalType": "bytes",
           "name": "hash",
           "type": "bytes"
         }
@@ -24,12 +22,10 @@
       "constant": false,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "node",
           "type": "bytes32"
         },
         {
-          "internalType": "bytes",
           "name": "hash",
           "type": "bytes"
         }
@@ -44,7 +40,6 @@
       "constant": true,
       "inputs": [
         {
-          "internalType": "bytes32",
           "name": "node",
           "type": "bytes32"
         }
@@ -52,7 +47,6 @@
       "name": "contenthash",
       "outputs": [
         {
-          "internalType": "bytes",
           "name": "",
           "type": "bytes"
         }
@@ -65,7 +59,6 @@
       "constant": true,
       "inputs": [
         {
-          "internalType": "bytes4",
           "name": "interfaceID",
           "type": "bytes4"
         }
@@ -73,7 +66,6 @@
       "name": "supportsInterface",
       "outputs": [
         {
-          "internalType": "bool",
           "name": "",
           "type": "bool"
         }
@@ -83,7 +75,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"node\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"hash\",\"type\":\"bytes\"}],\"name\":\"ContenthashChanged\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"node\",\"type\":\"bytes32\"}],\"name\":\"contenthash\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"node\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"hash\",\"type\":\"bytes\"}],\"name\":\"setContenthash\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"contenthash(bytes32)\":{\"params\":{\"node\":\"The ENS node to query.\"},\"return\":\"The associated contenthash.\"},\"setContenthash(bytes32,bytes)\":{\"params\":{\"hash\":\"The contenthash to set\",\"node\":\"The node to update.\"}}}},\"userdoc\":{\"methods\":{\"contenthash(bytes32)\":{\"notice\":\"Returns the contenthash associated with an ENS node.\"},\"setContenthash(bytes32,bytes)\":{\"notice\":\"Sets the contenthash associated with an ENS node. May only be called by the owner of that node in the ENS registry.\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/kevin/Dropbox/works/dev/ENS-fork/contracts/OwnedResolver.sol\":\"ContentHashResolver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/kevin/Dropbox/works/dev/ENS-fork/contracts/OwnedResolver.sol\":{\"keccak256\":\"0xc34579ee5496e9507785e4cbfbd541d34eb5d3b9acc08daef22d4da746beabbb\",\"urls\":[\"bzz-raw://046d78ea094f8af3e02355a64ad2c819236a986472d818690a08d5a3a2beefaa\",\"dweb:/ipfs/QmYPunYNJ2u41gT8XuRrXzZmU62UxrkamFKoF2RSfeW3cZ\"]}},\"version\":1}",
+  "metadata": "",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
@@ -2042,7 +2034,7 @@
                   "id": 10103,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    a := div(mload(add(b, 32)), exp(256, 12))\n}",
-                  "src": "2820:74:5"
+                  "src": "2820:80:5"
                 }
               ]
             },
@@ -2254,7 +2246,7 @@
                   "id": 10119,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    mstore(add(b, 32), mul(a, exp(256, 12)))\n}",
-                  "src": "3016:73:5"
+                  "src": "3016:79:5"
                 }
               ]
             },
@@ -3966,7 +3958,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11355,
+                          "referencedDeclaration": 11354,
                           "src": "4915:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_ABIResolver_$10256",
@@ -5980,7 +5972,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11357,
+                          "referencedDeclaration": 11356,
                           "src": "6795:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_AddrResolver_$10413",
@@ -6806,7 +6798,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11359,
+                          "referencedDeclaration": 11358,
                           "src": "7972:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_ContentHashResolver_$10481",
@@ -9348,7 +9340,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11361,
+                          "referencedDeclaration": 11360,
                           "src": "10844:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_InterfaceResolver_$10665",
@@ -10174,7 +10166,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11363,
+                          "referencedDeclaration": 11362,
                           "src": "12005:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_NameResolver_$10733",
@@ -11303,7 +11295,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11365,
+                          "referencedDeclaration": 11364,
                           "src": "13381:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_PubkeyResolver_$10822",
@@ -12298,7 +12290,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11367,
+                          "referencedDeclaration": 11366,
                           "src": "14698:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_TextResolver_$10903",
@@ -14747,7 +14739,7 @@
                   "id": 10103,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    a := div(mload(add(b, 32)), exp(256, 12))\n}",
-                  "src": "2820:74:5"
+                  "src": "2820:80:5"
                 }
               ]
             },
@@ -14959,7 +14951,7 @@
                   "id": 10119,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    mstore(add(b, 32), mul(a, exp(256, 12)))\n}",
-                  "src": "3016:73:5"
+                  "src": "3016:79:5"
                 }
               ]
             },
@@ -16671,7 +16663,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11355,
+                          "referencedDeclaration": 11354,
                           "src": "4915:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_ABIResolver_$10256",
@@ -18685,7 +18677,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11357,
+                          "referencedDeclaration": 11356,
                           "src": "6795:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_AddrResolver_$10413",
@@ -19511,7 +19503,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11359,
+                          "referencedDeclaration": 11358,
                           "src": "7972:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_ContentHashResolver_$10481",
@@ -22053,7 +22045,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11361,
+                          "referencedDeclaration": 11360,
                           "src": "10844:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_InterfaceResolver_$10665",
@@ -22879,7 +22871,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11363,
+                          "referencedDeclaration": 11362,
                           "src": "12005:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_NameResolver_$10733",
@@ -24008,7 +24000,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11365,
+                          "referencedDeclaration": 11364,
                           "src": "13381:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_PubkeyResolver_$10822",
@@ -25003,7 +24995,7 @@
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11367,
+                          "referencedDeclaration": 11366,
                           "src": "14698:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_super$_TextResolver_$10903",
@@ -25502,11 +25494,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T08:49:03.773Z",
+  "updatedAt": "2020-04-28T10:55:59.208Z",
   "devdoc": {
     "methods": {
       "contenthash(bytes32)": {
