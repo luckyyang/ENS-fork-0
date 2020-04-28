@@ -96595,8 +96595,8 @@
         }
       },
       "links": {},
-      "address": "0x023d00BAf01336E82953F276Df81dbFE3640F23d",
-      "transactionHash": "0x48f4ab5720f328b65cb77a5624959e5c7330af87e7acea9f3633b4285d3cb2da"
+      "address": "0xa2E5B3bb898cFb616E938d6c0a6dFafb967c7cc7",
+      "transactionHash": "0x1a04b6abd818d65db8ca037cab0fdbf308ebfe21d01b4533f4e5f58fba75f1fa"
     },
     "5777": {
       "events": {
@@ -96695,7 +96695,7 @@
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T12:42:55.084Z",
+  "updatedAt": "2020-04-28T13:47:16.857Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "A registrar controller for registering and renewing names at fixed cost.",
