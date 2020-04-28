@@ -54011,10 +54011,154 @@
       "links": {},
       "address": "0x574CB87E0806A2E7C25eB7fb328B17EA27A628d7",
       "transactionHash": "0x8efa50a76246c72501b04c16a8cd09e40d23899010b55b4068d7d633cc6cf66d"
+    },
+    "5777": {
+      "events": {
+        "0x87e97e825a1d1fa0c54e1d36c7506c1dea8b1efd451fe68b000cf96f7cf40003": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "registrationDate",
+              "type": "uint256"
+            }
+          ],
+          "name": "AuctionStarted",
+          "type": "event"
+        },
+        "0xb556ff269c1b6714f432c36431e2041d28436a73b6c3f19c021827bbdc6bfc29": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "name": "bidder",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "deposit",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewBid",
+          "type": "event"
+        },
+        "0x7b6c4b278d165a6b33958f8ea5dfb00c8c9d4d0acf1985bef5d10786898bc3e7": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "status",
+              "type": "uint8"
+            }
+          ],
+          "name": "BidRevealed",
+          "type": "event"
+        },
+        "0x0f0c27adfd84b60b6f456b0e87cdccb1e5fb9603991588d87fa99f5b6b61e670": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "registrationDate",
+              "type": "uint256"
+            }
+          ],
+          "name": "HashRegistered",
+          "type": "event"
+        },
+        "0x292b79b9246fa2c8e77d3fe195b251f9cb839d7d038e667c069ee7708c631e16": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "HashReleased",
+          "type": "event"
+        },
+        "0x1f9c649fe47e58bb60f4e52f0d90e4c47a526c9f90c5113df842c025970b66ad": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "registrationDate",
+              "type": "uint256"
+            }
+          ],
+          "name": "HashInvalidated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x84d962E6f8044B75B7Ed297FD2cDdd78Cb2E25D9",
+      "transactionHash": "0x0b8f628fb6dbdc5ebb3e36072da4058bcf035537e3434d12028120c623611a4e"
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T12:11:16.924Z",
+  "updatedAt": "2020-04-28T12:42:54.991Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "The registrar handles the auction process for each subnode of the node it owns.",
