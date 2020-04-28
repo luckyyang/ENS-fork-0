@@ -23,9 +23,11 @@
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+import privateKey from './pk'
+
 const PrivateKeyProvider = require("truffle-privatekey-provider");
 //just a test key, copy it if u want
-const privateKey = "274a3479ae7a44b390aa30541ae2f72b16b7c641a91a7e1121bd7936286dcf1b";
+const privateKey = privateKey;
 
 
 module.exports = {
