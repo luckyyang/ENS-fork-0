@@ -54009,8 +54009,8 @@
         }
       },
       "links": {},
-      "address": "0xaE56973D6e761D39Ee06E6151FfBb6f4e72Fe0cf",
-      "transactionHash": "0x600d0fdfc95bf61c6ed1726364e9ee11054ac2118be98ea5b9f2aa6913560502"
+      "address": "0x636D49e574C7e8D9fFeE59c60e4e02FCbE8d2408",
+      "transactionHash": "0x6fc42ae86c2e88136b005bae00f7a5c3799d8589ff0dd632866ebe357558ba9c"
     },
     "5777": {
       "events": {
@@ -54158,7 +54158,7 @@
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T13:47:16.763Z",
+  "updatedAt": "2020-04-28T15:34:46.951Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "The registrar handles the auction process for each subnode of the node it owns.",
