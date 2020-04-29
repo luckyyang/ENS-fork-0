@@ -55,7 +55,7 @@ contract('BaseRegistrar', function (accounts) {
   })
 
   it('should allow new registrations', async () => {
-		let tx = await registrar.register(sha3("newname"), registrantAccount, 86400, {from: controllerAccount});
+		let tx = await registrar.register(sha3("newname"), registrar.address, 86400, {from: controllerAccount});
 		let block = await web3.eth.getBlock(tx.receipt.blockHash);
 		assert.equal(await ens.owner(namehash.hash("newname.eth")), registrantAccount);
 		assert.equal(await registrar.ownerOf(sha3("newname")), registrantAccount);

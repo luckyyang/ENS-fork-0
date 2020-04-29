@@ -96595,107 +96595,12 @@
         }
       },
       "links": {},
-      "address": "0x8640Bf267363d7eBffCffA991166494A76fd2C64",
-      "transactionHash": "0xd07bba460aa92fbb0b8495a94e876c03be68a9de0eccef5eb86e38d237495293"
-    },
-    "5777": {
-      "events": {
-        "0xca6abbe9d7f11422cb6ca7629fbf6fe9efb1c621f71ce8f02b9f2a230097404f": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": false,
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "indexed": true,
-              "name": "label",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "name": "owner",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "name": "cost",
-              "type": "uint256"
-            },
-            {
-              "indexed": false,
-              "name": "expires",
-              "type": "uint256"
-            }
-          ],
-          "name": "NameRegistered",
-          "type": "event"
-        },
-        "0x3da24c024582931cfaf8267d8ed24d13a82a8068d5bd337d30ec45cea4e506ae": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": false,
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "indexed": true,
-              "name": "label",
-              "type": "bytes32"
-            },
-            {
-              "indexed": false,
-              "name": "cost",
-              "type": "uint256"
-            },
-            {
-              "indexed": false,
-              "name": "expires",
-              "type": "uint256"
-            }
-          ],
-          "name": "NameRenewed",
-          "type": "event"
-        },
-        "0xf261845a790fe29bbd6631e2ca4a5bdc83e6eed7c3271d9590d97287e00e9123": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "oracle",
-              "type": "address"
-            }
-          ],
-          "name": "NewPriceOracle",
-          "type": "event"
-        },
-        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0xC41a2FE4c22FE82174DEf6B501163E205dE2922d",
-      "transactionHash": "0x4195088e3bb9019e787491e11cb5ffa1a6748b0090fce0730d37875e4c55ce2a"
+      "address": "0x9487a20c94c52A4FC48DEd930885eF8d383035AE",
+      "transactionHash": "0x7979a780b480fe788a8313857af7c95a7417af9ad8051d246d22446c12ed1805"
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T15:34:47.055Z",
+  "updatedAt": "2020-04-29T07:07:46.527Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "A registrar controller for registering and renewing names at fixed cost.",

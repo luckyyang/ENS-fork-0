@@ -57,7 +57,6 @@ module.exports = {
       },
       port:8545,
       network_id: "*",
-      gas: 8000000,
     }
 
     // Another network with more advanced options...

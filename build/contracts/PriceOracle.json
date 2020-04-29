@@ -7650,7 +7650,7 @@
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T10:55:59.158Z",
+  "updatedAt": "2020-04-29T06:56:16.042Z",
   "devdoc": {
     "methods": {
       "price(string,uint256,uint256)": {

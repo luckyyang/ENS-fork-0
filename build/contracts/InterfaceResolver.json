@@ -25632,7 +25632,7 @@
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T10:55:59.216Z",
+  "updatedAt": "2020-04-29T06:56:16.082Z",
   "devdoc": {
     "methods": {
       "addr(bytes32)": {

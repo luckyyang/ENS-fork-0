@@ -7119,8 +7119,8 @@
           }
         ],
         "contractDependencies": [
-          282,
-          532
+          532,
+          282
         ],
         "contractKind": "contract",
         "documentation": "@title Registrar\n@dev The registrar handles the auction process for each subnode of the node it owns.",
@@ -54207,8 +54207,8 @@
           }
         ],
         "contractDependencies": [
-          282,
-          532
+          532,
+          282
         ],
         "contractKind": "contract",
         "documentation": "@title Registrar\n@dev The registrar handles the auction process for each subnode of the node it owns.",
@@ -95078,187 +95078,12 @@
         }
       },
       "links": {},
-      "address": "0xC8Fd2e064aF0b10883479583dC5a8Ad671ab0056",
-      "transactionHash": "0x1b5193c902690cc8b07113e6e10e31e5c6df3f57bdec3a4c025d40068a31e960"
-    },
-    "5777": {
-      "events": {
-        "0x0a8bb31534c0ed46f380cb867bd5c803a189ced9a764e30b3a4991a9901d7474": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "controller",
-              "type": "address"
-            }
-          ],
-          "name": "ControllerAdded",
-          "type": "event"
-        },
-        "0x33d83959be2573f5453b12eb9d43b3499bc57d96bd2f067ba44803c859e81113": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "controller",
-              "type": "address"
-            }
-          ],
-          "name": "ControllerRemoved",
-          "type": "event"
-        },
-        "0xea3d7e1195a15d2ddcd859b01abd4c6b960fa9f9264e499a70a90c7f0c64b717": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "indexed": true,
-              "name": "owner",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "name": "expires",
-              "type": "uint256"
-            }
-          ],
-          "name": "NameMigrated",
-          "type": "event"
-        },
-        "0xb3d987963d01b2f68493b4bdb130988f157ea43070d4ad840fee0466ed9370d9": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "indexed": true,
-              "name": "owner",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "name": "expires",
-              "type": "uint256"
-            }
-          ],
-          "name": "NameRegistered",
-          "type": "event"
-        },
-        "0x9b87a00e30f1ac65d898f070f8a3488fe60517182d0a2098e1b4b93a54aa9bd6": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "indexed": false,
-              "name": "expires",
-              "type": "uint256"
-            }
-          ],
-          "name": "NameRenewed",
-          "type": "event"
-        },
-        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event"
-        },
-        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "from",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "to",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "tokenId",
-              "type": "uint256"
-            }
-          ],
-          "name": "Transfer",
-          "type": "event"
-        },
-        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "owner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "approved",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "tokenId",
-              "type": "uint256"
-            }
-          ],
-          "name": "Approval",
-          "type": "event"
-        },
-        "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "owner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "operator",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "name": "approved",
-              "type": "bool"
-            }
-          ],
-          "name": "ApprovalForAll",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0xd55e0bB11F11A03c751f9944c2bB9525CeB8d8A5",
-      "transactionHash": "0xdece905ce52e99274dc3a9846e8318dbe6349379546b2fa193a1197fe882acd8"
+      "address": "0x3016c8D61b6821ABE1E6b19FddfF38ff2eC55f2a",
+      "transactionHash": "0xf9af029059ebaebcd82c36c2f9abef76138f488724c15f6c12ea72f720f4f8fc"
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-28T15:34:46.996Z",
+  "updatedAt": "2020-04-29T07:07:46.466Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {

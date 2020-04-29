@@ -12,12 +12,13 @@ const toBN = require("web3-utils").toBN;
 const DAYS = 24 * 60 * 60;
 const SALT = sha3("foo");
 const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
+//0x2cc116761f592ca63b5701189b06827a6d04037c4b7593ff66671455ed5779d2
 const ELA_LABEL = sha3("ela");
 const ELA_NODE = namehash.hash("ela");
 const MIN_COMMITMENT_AGE = 60;
 const MAX_COMMITMENT_AGE = 86400;
 
-// Development network only: Deploy the old ENS contracts with some sample names.
+// eploy the old ENS contracts with some sample names.
 module.exports = async function(deployer, network, accounts) {
 
   // Deploy the ENSregistry
@@ -44,4 +45,8 @@ module.exports = async function(deployer, network, accounts) {
   // Deploy the Resolver
   await deployer.deploy(PublicResolver,{ from: accounts[0] })
   const Resolver = await PublicResolver.deployed();
+
+  await Registrar.addController(accounts[0], {from: accounts[0]});
+  await ens.setSubnodeOwner(ZERO_ADDRESS, ELA_LABEL, Registrar.address, { from: accounts[0] });
+  await Registrar.register(sha3("migrated"),accounts[0],86400,{from:accounts[0]})
 }
