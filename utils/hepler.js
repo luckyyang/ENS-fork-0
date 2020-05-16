@@ -7,7 +7,7 @@ const SALT = sha3("foo");
 //console.log(SALT)
 
 // node => namehash
-console.log(namehash.hash("reverse"))
+console.log(namehash.hash("nakadaole.ela"))
 
 // id => sha3
  console.log(sha3("addr"));
