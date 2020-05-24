@@ -185,7 +185,7 @@ contract SimplePriceOracle is Ownable, PriceOracle {
         emit RentPriceChanged(_rentPrice);
     }
     
-    function updateSuccessRegistNumber()  public onlyController  {
+    function updateSuccessRegistNumber()  external onlyController  {
         
         if(successRegistNumber==0){
             currentIncrease = 10**15;
