@@ -155,9 +155,11 @@ contract SimplePriceOracle is Ownable, PriceOracle {
 
     // Rent in wei per second
     uint public rentPrice;
-
+    uint public successRegistNumber;
+    
     event RentPriceChanged(uint price);
-
+    event SccessRegistNumberChanged(uint successRegistNumber);
+    
     constructor(uint _rentPrice) public {
         setPrice(_rentPrice);
     }
@@ -166,13 +168,18 @@ contract SimplePriceOracle is Ownable, PriceOracle {
         rentPrice = _rentPrice;
         emit RentPriceChanged(_rentPrice);
     }
-
+    
+    function updateSuccessRegistNumber()  public  {
+        successRegistNumber ++;
+        emit SccessRegistNumberChanged(successRegistNumber);
+    }
+    
     /**
      * @dev Returns the price to register or renew a name.
      * @param duration How long the name is being registered or extended for, in seconds.
      * @return The price of this renewal or registration, in wei.
      */
     function price(string calldata /*name*/, uint /*expires*/, uint duration) external view returns(uint) {
-        return duration.mul(rentPrice);
-    }
+        return (successRegistNumber === 0) ? duration.mul(rentPrice) :duration.mul(rentPrice) + (10**15) * ((999875 / 1000000)**(successRegistNumber-1));
+   
 }
