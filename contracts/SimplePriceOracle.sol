@@ -156,12 +156,27 @@ contract SimplePriceOracle is Ownable, PriceOracle {
     // Rent in wei per second
     uint public rentPrice;
     uint public successRegistNumber;
+    // A map of addresses that are authorised to change Price.
+    mapping(address=>bool) public controllers;
     
     event RentPriceChanged(uint price);
     event SccessRegistNumberChanged(uint successRegistNumber);
     
+    modifier onlyController {
+        require(controllers[msg.sender]);
+        _;
+    }
     constructor(uint _rentPrice) public {
         setPrice(_rentPrice);
+    }
+    // Authorises a controller
+    function addController(address controller) external onlyOwner {
+        controllers[controller] = true;
+    }
+
+    // Revoke controller permission for an address.
+    function removeController(address controller) external onlyOwner {
+        controllers[controller] = false;
     }
 
     function setPrice(uint _rentPrice) public onlyOwner {
@@ -169,7 +184,7 @@ contract SimplePriceOracle is Ownable, PriceOracle {
         emit RentPriceChanged(_rentPrice);
     }
     
-    function updateSuccessRegistNumber()  public  {
+    function updateSuccessRegistNumber()  public onlyController  {
         successRegistNumber ++;
         emit SccessRegistNumberChanged(successRegistNumber);
     }
