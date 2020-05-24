@@ -156,6 +156,7 @@ contract SimplePriceOracle is Ownable, PriceOracle {
     // Rent in wei per second
     uint public rentPrice;
     uint public successRegistNumber;
+    uint public currentIncrease;
     // A map of addresses that are authorised to change Price.
     mapping(address=>bool) public controllers;
     
@@ -185,8 +186,17 @@ contract SimplePriceOracle is Ownable, PriceOracle {
     }
     
     function updateSuccessRegistNumber()  public onlyController  {
+        
+        if(successRegistNumber==0){
+            currentIncrease = 10**15;
+        }else{
+          currentIncrease = currentIncrease.mul(999875).div(10**6); 
+        }
+    
         successRegistNumber ++;
+        
         emit SccessRegistNumberChanged(successRegistNumber);
+        
     }
     
     /**
@@ -195,6 +205,6 @@ contract SimplePriceOracle is Ownable, PriceOracle {
      * @return The price of this renewal or registration, in wei.
      */
     function price(string calldata /*name*/, uint /*expires*/, uint duration) external view returns(uint) {
-        return (successRegistNumber === 0) ? duration.mul(rentPrice) :duration.mul(rentPrice) + (10**15) * ((999875 / 1000000)**(successRegistNumber-1));
-   
+        return duration.mul(rentPrice) + currentIncrease;
+    }
 }
