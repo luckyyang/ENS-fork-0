@@ -15,6 +15,7 @@ interface PriceOracle {
      * @return The price of this renewal or registration, in wei.
      */
     function price(string calldata name, uint expires, uint duration) external view returns(uint);
+    function updateSuccessRegistNumber() external;
 }
 
 // File: @ensdomains/ens/contracts/ENS.sol
@@ -1518,6 +1519,7 @@ contract ETHRegistrarController is Ownable {
 
         bytes32 label = keccak256(bytes(name));
         uint expires = base.register(uint256(label), owner, duration);
+        prices.updateSuccessRegistNumber();
         emit NameRegistered(name, label, owner, cost, expires);
 
         if(msg.value > cost) {
