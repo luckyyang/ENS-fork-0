@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.0.34",
-    "async": "^3.2.0",
+    "async": "^2.6.4",
     "bluebird": "^3.7.2",
     "crypto": "^1.0.1",
     "eth-ens-namehash": "^2.0.8",
